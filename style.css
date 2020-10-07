@@ -28,6 +28,10 @@ header {
     grid-area: hdlink;
     width: 60px;
     margin: 20px;
+    transition: width O.5s;
+}
+.git:hover {
+    width :70px;
 }
 .reseaux {
     display: flex;
@@ -38,8 +42,11 @@ header {
     grid-area: hdlink;
     width: 60px;
     margin: 20px;
-
 }
+.linkedin:hover {
+    width :70px;
+}
+
 .titre {
     grid-area: hdtitle;
     text-align: center;
