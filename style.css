@@ -5,24 +5,42 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-template-areas: "hdphoto hdtitle";
-    margin : 0px;
-    padding: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0px;
+    grid-template-areas:'hdphoto hdtitle hdlink';
+    margin : 20px;
+    padding: 20px;
+    background-color: rgba(98, 98, 133, 0.178);
 }
-nav {
-    display: grid;
-    grid-column: 1;
-}
-img {
+
+.me {
+    grid-area: hdphoto;
     width: 50%;
     height: auto;
     border-radius: 50%;
     border: solid 2px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.git {
+    grid-area: hdlink;
+    width: 60px;
+    margin: 20px;
+}
+.reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkedin {
+    grid-area: hdlink;
+    width: 60px;
+    margin: 20px;
+    
 }
 .titre {
-    grid-column: 2/4;
+    grid-area: hdtitle;
     text-align: center;
     margin : 60px;
     padding: 0px;
@@ -37,21 +55,21 @@ img {
     margin : 10px;
 }
 .aboutme {
-    background-color: lightgray;
+    background-color: rgba(98, 98, 133, 0.178);
     grid-area: aboutme;
     text-align: justify;
     margin : 10px;
     padding : 10px;
 }
 .contact {
-    background-color: lightgray;
+    background-color: rgba(98, 98, 133, 0.178);
     grid-area: contact;
     text-align: justify;
     margin :10px;
     padding : 10px;
 }
 .Languages {
-    background-color: lightgray;
+    background-color: rgba(98, 98, 133, 0.178);
     grid-area: languages;
     text-align: justify;
     margin :10px;
@@ -68,8 +86,32 @@ img {
     border-radius: 10%;
 }
 .experience {
-    background-color: lightgray;
+    background-color: rgba(98, 98, 133, 0.178);
     grid-area: experience;
     margin :10px;
     padding : 10px;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-style: italic;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 3px;
+    font-size: 18px;
+}
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+h4 {
+    font-family: 'Times New Roman';
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
 }
