@@ -92,6 +92,7 @@ header {
     width: auto;
     height: 40px;
     border-radius: 10%;
+    margin-left: 15px;
 }
 .experience {
     background-color: rgba(98, 98, 133, 0.178);
